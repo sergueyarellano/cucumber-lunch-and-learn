@@ -1,0 +1,16 @@
+# System files
+.DS_Store
+.vscode
+
+# Dependencies
+node_modules
+
+# Test coverage and reporting
+.nyc_output
+coverage
+cucumber_report.*
+test/report/assets
+test/report/features
+test/report/index.html
+*all-passed.html
+*-failed.html
