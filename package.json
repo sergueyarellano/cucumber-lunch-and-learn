@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cucumber-js test/features --require test/steps --require test/support -f json:test/report/cucumber_report.json",
+    "report": "node test/report/report.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/sergueyarellano/cucumber-lunch-and-learn/issues"
   },
-  "homepage": "https://github.com/sergueyarellano/cucumber-lunch-and-learn#readme"
+  "homepage": "https://github.com/sergueyarellano/cucumber-lunch-and-learn#readme",
+  "devDependencies": {
+    "chalk": "3.0.0",
+    "cucumber": "6.0.5",
+    "multiple-cucumber-html-reporter": "1.13.1",
+    "standard": "14.3.1"
+  }
 }
