@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "cucumber-js test/features --require test/steps --require test/support -f json:test/report/cucumber_report.json",
-    "report": "node test/report/report.js"
+    "unit": "nodemon tape *.test.js | faucet",
+    "report": "node test/report/report.js",
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +20,17 @@
   },
   "homepage": "https://github.com/sergueyarellano/cucumber-lunch-and-learn#readme",
   "devDependencies": {
+    "axios": "0.19.0",
     "chalk": "3.0.0",
     "cucumber": "6.0.5",
     "multiple-cucumber-html-reporter": "1.13.1",
-    "standard": "14.3.1"
+    "standard": "14.3.1",
+    "tape": "4.11.0"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "express": "4.17.1",
+    "morgan": "1.9.1",
+    "nodemon": "2.0.1"
   }
 }
