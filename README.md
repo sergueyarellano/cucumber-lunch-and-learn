@@ -3,7 +3,15 @@ BDD workshop
 
 ## Set up
 
-## Project structure
+`npm install`
+
+## Run unit tests
+
+`npm run unit`
+
+## Run integration tests
+
+`npm test`
 
 ## Instructions
 
